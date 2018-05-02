@@ -1,81 +1,103 @@
+
 <html>
 <head>
   <title>JulieAnnVincetures</title>
 <style>
 
-body {
-  margin: 0;
-  padding: 0;
-/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
-  background: #333;
-  background-attachment: fixed;
-  background-size: cover;
+h2{
+  text-align: left;
+  position: relative;
+  left:100px;
+  top:10px;
 }
 
-/* The only rule that matters */
-#video-background {
-/*  making the video fullscreen  */
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
+#menu a:link{
+  text-decoration: none;
+  color:#7EC0EE;
+
 }
 
-/* These just style the content */
-article {
-/*  just a fancy border  */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 10px solid rgba(255, 255, 255, 0.5);
-  margin: 10px;
+#menu a:hover{
+  color:gray;
+
 }
 
-h1 {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  font-size: 36px;
-  letter-spacing: 3px;
-  color: #fff;
-  font-family: Oswald, sans-serif;
-  text-align: center;
+
+#menu {
+  word-spacing: 30px;
 }
 
-h1 span {
-  font-family: sans-serif;
-  letter-spacing: 0;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 24px;
+
+#menu {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 26spx;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
 }
 
-h1 span a {
-  color: #fff;
+<!-- Responsive image -->
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#icon{
+  position: relative;
+  right: -800px;
+  
+}
+
+#ATF{
+    background-image: url("ATF.jpg");
+}
+
+#ATF_title{
+    text-align: center;
+    font-size:50px;
+    position:relative;
+    top:260px;
+}
+
+#ATF_subtitle{
+    text-align: center;
 }
 
 </style>
 </head>
 <body>
+<p>
+<h2 id="menu">  
+  <a href="index.html">Home</a>
+  <a href="index.html">About</a>
+  <a href="index.html">Travel</a>
+  <a href="index.html">Eat</a>
+  <a href="index.html">Relax</a>
+  <a href="index.html">Videos</a>
+  <a href="https://www.facebook.com"> <img id="icon" src="fb-icon.png" style="width:30px;height:30px;"></a>
+  <a href="twitter.com"><img id="icon" src="twitter.png" style="width:30px;height:30px;"></a>
+</h2>
 
+</p>
 
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<div id="ATF" style="height: 780px;">
 
-<!--  Content  -->
-<article>
-  <h1>JULIEANNVINCETURES <br /> <span>I haven't been everywhere, but it's on my list</h1>
-</article>
-  
-<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
-<video autoplay loop id="video-background" muted plays-inline>
-  <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
-</video>
+  <h1 id="ATF_title">
+      JULIEANNVINCETURES
+  </h1>
+  <h3 id="ATF_subtitle">
+    I haven't been everywhere, but it's on my list.
+  </h3>
+
+</div> 
+
 
 
 </body>
